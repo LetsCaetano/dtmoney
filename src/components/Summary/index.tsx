@@ -8,7 +8,8 @@ import { Container } from "./styles";
 
 export function Summary() {
     // useContext ao invés de <TransactionsContext.Consumer...
-    const data = useContext(TransactionsContext);
+    const transactions = useContext(TransactionsContext);
+    console.log(transactions)
 
     return (
         <Container>
