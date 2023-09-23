@@ -8,6 +8,11 @@ interface Transaction {
     amount: number;
     type: string;
     category: string;
+    group: string;
+    paymentForm: string;
+    paymentStatus: string;
+    paymentDate: string;
+    notify: string;
     createdAt: string;
 }
 
@@ -20,7 +25,7 @@ interface TransactionInput {
 }
 */
 // Herda todos os campos de Tansaction menos id e createdAt
-type TransactionInput = Omit<Transaction, 'id' | 'createdAt'>;
+type TransactionInput = Omit<Transaction, 'id' | 'createdAt' | 'group' | 'paymentForm' |'paymentStatus' | 'paymentDate' | 'notify'>;
 
 
 interface TransactionsContextProps {

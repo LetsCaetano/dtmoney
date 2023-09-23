@@ -4,8 +4,13 @@
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.7.9",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "^5.11.12",
     "axios": "^0.25.0",
     "graphql": "^16.6.0",
+    "material-react-table": "^1.8.5",
     "miragejs": "^0.1.43",
     "polished": "^4.1.4",
     "react": "^17.0.2",

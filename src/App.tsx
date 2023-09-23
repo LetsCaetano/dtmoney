@@ -18,11 +18,16 @@ createServer({
         transactions: [
           {
             id: 1,
-            title: "Freelancer de website",
+            title: "Pagamento de boletos",
             type: 'deposit',
-            category: 'dev',
+            category: 'payment',
             amount: 6000,
-            createdAt: new Date('2021-02-12 09:00:00')
+            group: 'boleto',
+            paymentForm: 'in cash',
+            paymentStatus: "concluido",
+            paymentDate: new Date('2023-03-14 08:00:00'),
+            createdAt: new Date('2021-02-12 09:00:00'),
+            notify: true,
           },
           {
             id: 2,
@@ -30,7 +35,12 @@ createServer({
             type: 'withdraw',
             category: 'Casa',
             amount: 900,
-            createdAt: new Date('2021-02-14 11:00:00')
+            group: 'boleto',
+            paymentForm: 'in cash',
+            paymentStatus: "pendente",
+            paymentDate: new Date('2023-03-14 08:00:00'),
+            createdAt: new Date('2021-02-14 11:00:00'),
+            notify: true,
           }
         ]
       })
